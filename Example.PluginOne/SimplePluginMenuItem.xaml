@@ -1,0 +1,5 @@
+﻿<MenuItem x:Class="Example.PluginOne.SimplePluginMenuItem"
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          Header="I'm a simple menu item provided by Plugin One."/>
+

@@ -1,0 +1,30 @@
+﻿<Application x:Class="WpfMefPluginSpike.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfMefPluginSpike">
+
+    <Application.Resources>
+
+        <Style x:Key="MediumText" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="Green" />
+        </Style>
+        
+        <DataTemplate DataType="{x:Type local:MainRightSideTab}">
+
+            <Grid Background="Bisque">
+
+                <TextBlock Text="{Binding Text}"
+                           Style="{StaticResource MediumText}"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           TextWrapping="Wrap"/>
+
+            </Grid>
+
+        </DataTemplate>
+
+
+    </Application.Resources>
+
+</Application>
